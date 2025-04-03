@@ -12,7 +12,7 @@
 2. Go to settings and select “USB Update” then “Update me”
 3. The next screen will show the software versions available for this fixture on the USB drive. For multiple versions of the software for the same fixture, use or to select the 
 desired version.
-4. The software Version you selected will re-appear and ask to confirm “Yes or No”
+4. The software Version you selected will reappear and ask to confirm “Yes or No”
 5. The upgrade will start. DO NOT turn off the power or disconnect the USB while the USB LED is still blinking during the process. The screen display will read: “USB Update 
 Wait”. USB update can take several minutes to complete.
    >When the USB firmware is done uploading, in some fixtures the display will change to: “**DO NOT UNPLUG, UPDATING**”.
@@ -22,6 +22,6 @@ Wait”. USB update can take several minutes to complete.
 
 ### Special Notes
 * Place the .chl file in the root directory of the USB drive.
-* The product's USB port supports up to 32GB capacity and only works with FAT32 file format.
-* It is possible to update multiple units with the USB if they are daisy chained via DMX.
+* The product's USB port supports up to 32GB capacity and only works with the FAT32 file format.
+* It is possible to update multiple units with the USB if they are daisy-chained via DMX.
 * Turning off the power or removing the USB while still blinking during the update will cause partial or total firmware failure in the targeted fixture(s). If this occurs, the user will need the UPLOAD 08 device to fix this.
