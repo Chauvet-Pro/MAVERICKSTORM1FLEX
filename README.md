@@ -2,6 +2,10 @@
 
 ## Software Versions
 
+[V1.250801 - Maverick Storm 1 Flex](https://github.com/Chauvet-Pro/MAVERICKSTORM1FLEX/blob/c1f17f73d76a29e318b5439def4c1e7f9b412c94/firmware/V1.250801.zip)
+-  Changing "Factory Reset" will only reset settings, but not do motor reset
+-  Change close in loss of data to be blackout
+
 [V1.250331 - Maverick Storm 1 Flex](https://github.com/Chauvet-Pro/MAVERICKSTORM1FLEX/blob/da54a4dae1a3994502c62035eda56ffb52e86313/firmware/V1.250331.zip)
 - Released initial software version
 
