@@ -2,7 +2,7 @@
 
 ## Software Versions
 
-[V1.250813 - Maverick Storm 1 Flex]([https://github.com/Chauvet-Pro/MAVERICKSTORM1FLEX/blob/dce1ec0867ee3b310fc7dddb6c0c6bb816bdb5b7/firmware/V1.250813.zip](https://github.com/Chauvet-Pro/MAVERICKSTORM1FLEX/raw/dce1ec0867ee3b310fc7dddb6c0c6bb816bdb5b7/firmware/V1.250813.zip))
+[V1.250813 - Maverick Storm 1 Flex](https://github.com/Chauvet-Pro/MAVERICKSTORM1FLEX/blob/dce1ec0867ee3b310fc7dddb6c0c6bb816bdb5b7/firmware/V1.250813.zip)
 - Fix the issue that ArtNet and sACN has no control
 - Change ArtNet universe to be 32767 in webserver 
 - Change address in webserver to be input box
