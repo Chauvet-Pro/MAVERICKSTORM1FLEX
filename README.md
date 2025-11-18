@@ -2,6 +2,9 @@
 
 ## Software Versions
 
+[V1.251024 - Maverick Storm 1 Flex](https://github.com/Chauvet-Pro/MAVERICKSTORM1FLEX/blob/6284fcdc2dc532411d7b9f725dddceb1d11b6203/firmware/V1.251024.zip)
+- Added Sky Tracker mode
+
 [V1.250813 - Maverick Storm 1 Flex](https://github.com/Chauvet-Pro/MAVERICKSTORM1FLEX/blob/dce1ec0867ee3b310fc7dddb6c0c6bb816bdb5b7/firmware/V1.250813.zip)
 - Fix the issue that ArtNet and sACN has no control
 - Change ArtNet universe to be 32767 in webserver 
