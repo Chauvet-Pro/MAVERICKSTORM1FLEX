@@ -2,6 +2,9 @@
 
 ## Software Versions
 
+[V1.260609 - Maverick Storm 1 Flex](https://github.com/Chauvet-Pro/MAVERICKSTORM1FLEX/blob/3b79a2ddf9ae503c7f5dd13f5323e49731709c31/firmware/V1.260609.zip)
+- Added NFC capabilities
+  
 [V1.251024 - Maverick Storm 1 Flex](https://github.com/Chauvet-Pro/MAVERICKSTORM1FLEX/blob/6284fcdc2dc532411d7b9f725dddceb1d11b6203/firmware/V1.251024.zip)
 - Added Sky Tracker mode
 
