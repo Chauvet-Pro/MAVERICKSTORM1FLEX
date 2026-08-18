@@ -1,5 +1,3 @@
-# Managed by Chauvet-Pro/UNRIVAL — tells that repo to refresh fixtures.json
-# when this repo publishes a release. Needs org secret UNRIVAL_DISPATCH_TOKEN.
 name: Notify UNRIVAL
 
 on:
@@ -12,10 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          curl -fsS -X POST \
-            -H "Authorization: Bearer $TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/Chauvet-Pro/UNRIVAL/dispatches \
-            -d '{"event_type":"firmware-release","client_payload":{"repo":"${{ github.repository }}","tag":"${{ github.event.release.tag_name }}"}}'
+          curl -sS -D /tmp/h -o /tmp/b -H "Authorization: Bearer $TOKEN" \
+            https://api.github.com/repos/Chauvet-Pro/UNRIVAL
+          echo "--- sso/scope headers ---"
+          grep -iE "x-github-sso|x-oauth-scopes|x-accepted" /tmp/h || echo "(none)"
+          echo "--- body ---"
+          tr -d '\n' < /tmp/b | head -c 300
         env:
           TOKEN: ${{ secrets.UNRIVAL_DISPATCH_TOKEN }}
