@@ -3,7 +3,6 @@
 name: Notify UNRIVAL
 
 on:
-  workflow_dispatch:
   release:
     types: [published]
 
