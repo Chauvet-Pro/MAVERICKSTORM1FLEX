@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          api() { curl -s -o /tmp/b -w "%{http_code}" -H "Authorization: Bearer $TOKEN" "$@"; }
-          echo "GET /user            -> $(api https://api.github.com/user)"
-          echo "  token owner login  -> $(python3 -c "import json;print(json.load(open('/tmp/b')).get('login','n/a'))" 2>/dev/null || echo n/a)"
-          echo "GET  UNRIVAL repo    -> $(api https://api.github.com/repos/Chauvet-Pro/UNRIVAL)"
-          echo "POST dispatches      -> $(api -X POST https://api.github.com/repos/Chauvet-Pro/UNRIVAL/dispatches -d '{"event_type":"firmware-release"}')"
-          echo "  response           -> $(head -c 200 /tmp/b)"
+          curl -sS -D /tmp/h -o /tmp/b -H "Authorization: Bearer $TOKEN" \
+            https://api.github.com/repos/Chauvet-Pro/UNRIVAL
+          echo "--- sso/scope headers ---"
+          grep -iE "x-github-sso|x-oauth-scopes|x-accepted" /tmp/h || echo "(none)"
+          echo "--- body ---"
+          tr -d '\n' < /tmp/b | head -c 300
         env:
           TOKEN: ${{ secrets.UNRIVAL_DISPATCH_TOKEN }}
